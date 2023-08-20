@@ -1,0 +1,15 @@
+create database crudaluno;
+use crudaluno;
+create table aluno(id bigint NOT NULL AUTO_INCREMENT,
+    nome varchar(100) NOT NULL,
+    ra varchar(15) UNIQUE NOT NULL,
+    email varchar(30) UNIQUE,
+    nota1 decimal(4,2),
+    nota2 decimal(4,2),
+    nota3 decimal(4,2),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO aluno (nome, ra, email, nota1, nota2, nota3) VALUES ('NomeDoAluno', 'RA12345', 'email@example.com', 8.5, 9.0, 7.2);
+
+
